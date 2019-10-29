@@ -6,7 +6,7 @@
   "author": "Kazuhiro Sera @seratch",
   "license": "MIT",
   "dependencies": {
-    "@slack/bolt": "^1.2.0",
+    "@slack/bolt": "^1.4.1",
     "aws-serverless-express": "^3.3.6"
   },
   "devDependencies": {
