@@ -16,9 +16,14 @@ const app = new App({
 // Application Logic
 // ------------------------
 
-app.command('/echo', async ({ command, ack, say }) => {
-  ack();
-  say(`${command.text}`);
+app.command('/echo', async ({ command, logger, ack, say }) => {
+  try {
+    await say(`${command.text}`);
+    await ack();
+  } catch (e) {
+    logger.error(e);
+    await ack(`:x: Failed to post a message (error: ${e})`);
+  }
 });
 
 // ------------------------
