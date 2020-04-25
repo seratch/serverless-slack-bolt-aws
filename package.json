@@ -1,16 +1,16 @@
 {
   "name": "aws-bolt",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
   "scripts": {},
   "author": "Kazuhiro Sera @seratch",
   "license": "MIT",
   "dependencies": {
-    "@slack/bolt": "^2.0.0",
+    "@slack/bolt": "^2.0.1",
     "aws-serverless-express": "^3.3.8"
   },
   "devDependencies": {
-    "serverless": "^1.67.0",
+    "serverless": "^1.68.0",
     "serverless-offline": "^5.12.1"
   }
 }
